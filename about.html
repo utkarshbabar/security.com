@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - SecureScan</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="https://placehold.co/32x32/0f172a/ffffff?text=SS" type="image/png">
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans flex flex-col min-h-screen">
+
+    <header class="bg-slate-900 text-white sticky top-0 z-50 shadow-lg">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <a href="index.html" class="text-3xl font-bold text-sky-400 flex items-center">
+                    <i class="fas fa-shield-alt mr-2"></i> SecureScan
+                </a>
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-white focus:outline-none">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+                <nav class="hidden md:flex space-x-6 items-center" id="desktop-nav">
+                    <a href="index.html" class="nav-link hover:text-sky-400 transition duration-300 px-3 py-2 rounded-md text-sm font-medium">Home</a>
+                    <a href="scanner.html" class="nav-link hover:text-sky-400 transition duration-300 px-3 py-2 rounded-md text-sm font-medium">Scanner</a>
+                    <a href="articles.html" class="nav-link hover:text-sky-400 transition duration-300 px-3 py-2 rounded-md text-sm font-medium">Articles</a>
+                    <a href="tools.html" class="nav-link hover:text-sky-400 transition duration-300 px-3 py-2 rounded-md text-sm font-medium">Tools</a>
+                    <a href="about.html" class="nav-link hover:text-sky-400 transition duration-300 px-3 py-2 rounded-md text-sm font-medium">About</a>
+                    <a href="contact.html" class="nav-link hover:text-sky-400 transition duration-300 px-3 py-2 rounded-md text-sm font-medium">Contact</a>
+                </nav>
+            </div>
+        </div>
+        <div id="mobile-menu" class="md:hidden hidden bg-slate-800">
+            <nav class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="index.html" class="nav-link hover:bg-slate-700 hover:text-sky-400 block px-3 py-2 rounded-md text-base font-medium">Home</a>
+                <a href="scanner.html" class="nav-link hover:bg-slate-700 hover:text-sky-400 block px-3 py-2 rounded-md text-base font-medium">Scanner</a>
+                <a href="articles.html" class="nav-link hover:bg-slate-700 hover:text-sky-400 block px-3 py-2 rounded-md text-base font-medium">Articles</a>
+                <a href="tools.html" class="nav-link hover:bg-slate-700 hover:text-sky-400 block px-3 py-2 rounded-md text-base font-medium">Tools</a>
+                <a href="about.html" class="nav-link hover:bg-slate-700 hover:text-sky-400 block px-3 py-2 rounded-md text-base font-medium">About</a>
+                <a href="contact.html" class="nav-link hover:bg-slate-700 hover:text-sky-400 block px-3 py-2 rounded-md text-base font-medium">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="flex-grow container mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16">
+        <div class="bg-white p-8 md:p-12 rounded-xl shadow-2xl max-w-4xl mx-auto">
+            <h1 class="text-3xl sm:text-4xl font-bold text-slate-800 mb-10 text-center border-b-2 border-sky-500 pb-4">About SecureScan</h1>
+            
+            <div class="space-y-8 text-lg text-slate-700 leading-relaxed">
+                <section>
+                    <h2 class="text-2xl font-semibold text-sky-600 mb-3">Our Mission</h2>
+                    <p>At SecureScan, our mission is to empower individuals and organizations with the knowledge and tools necessary to navigate the digital world safely and confidently. We believe that everyone deserves to be secure online, and we are dedicated to providing accessible, reliable, and up-to-date resources to help achieve this.</p>
+                </section>
+
+                <section>
+                    <h2 class="text-2xl font-semibold text-sky-600 mb-3">What We Do</h2>
+                    <p>SecureScan offers a range of services and resources designed to enhance your online security:</p>
+                    <ul class="list-disc list-inside ml-4 space-y-2 mt-2 text-slate-600">
+                        <li><strong>Threat Scanning (Simulated):</strong> Our primary tool provides a quick assessment of website safety (for demonstration).</li>
+                        <li><strong>Educational Articles:</strong> We publish informative content on a wide array of cybersecurity topics, from understanding common threats to implementing best practices.</li>
+                        <li><strong>Security Tools (Upcoming):</strong> We are continuously working on developing practical tools to assist with tasks like password management, data encryption, and more.</li>
+                        <li><strong>Community Awareness:</strong> We aim to foster a community that is aware and proactive about cybersecurity.</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2 class="text-2xl font-semibold text-sky-600 mb-3">Our Values</h2>
+                     <div class="grid md:grid-cols-2 gap-6 mt-4">
+                        <div class="bg-sky-50 p-4 rounded-lg border border-sky-200">
+                            <h3 class="font-semibold text-sky-700"><i class="fas fa-users mr-2"></i>User-Centricity</h3>
+                            <p class="text-sm text-slate-600">Our users are at the heart of everything we do. We strive to provide solutions that are easy to understand and use.</p>
+                        </div>
+                        <div class="bg-sky-50 p-4 rounded-lg border border-sky-200">
+                            <h3 class="font-semibold text-sky-700"><i class="fas fa-lightbulb mr-2"></i>Education</h3>
+                            <p class="text-sm text-slate-600">We believe knowledge is power. We are committed to educating our users about online risks and safeguards.</p>
+                        </div>
+                        <div class="bg-sky-50 p-4 rounded-lg border border-sky-200">
+                            <h3 class="font-semibold text-sky-700"><i class="fas fa-shield-alt mr-2"></i>Trust & Integrity</h3>
+                            <p class="text-sm text-slate-600">We operate with transparency and aim to be a trusted source for cybersecurity information.</p>
+                        </div>
+                        <div class="bg-sky-50 p-4 rounded-lg border border-sky-200">
+                            <h3 class="font-semibold text-sky-700"><i class="fas fa-cogs mr-2"></i>Innovation</h3>
+                            <p class="text-sm text-slate-600">The digital landscape is always evolving, and so are we. We adapt and innovate to address new challenges.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <h2 class="text-2xl font-semibold text-sky-600 mb-3">Meet the (Conceptual) Team</h2>
+                    <p>SecureScan is currently a conceptual project developed to demonstrate web technologies and cybersecurity awareness. In a real-world scenario, it would be backed by a dedicated team of cybersecurity experts, developers, and content creators passionate about making the internet a safer place.</p>
+                    <div class="mt-6 text-center">
+                         <img src="https://placehold.co/400x200/0f172a/ffffff?text=Team+SecureScan" alt="Conceptual Team SecureScan" class="mx-auto rounded-lg shadow-md">
+                    </div>
+                </section>
+                 <section class="text-center mt-12">
+                    <a href="contact.html" class="bg-sky-500 hover:bg-sky-600 text-white font-semibold py-3 px-8 rounded-lg text-lg transition duration-300 shadow-md hover:shadow-lg">
+                        Get In Touch
+                    </a>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-slate-900 text-slate-400 py-12 mt-auto">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p>&copy; <span id="currentYear"></span> SecureScan. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

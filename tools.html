@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Security Tools - SecureScan</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="https://placehold.co/32x32/0f172a/ffffff?text=SS" type="image/png">
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans flex flex-col min-h-screen">
+
+    <header class="bg-slate-900 text-white sticky top-0 z-50 shadow-lg">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <a href="index.html" class="text-3xl font-bold text-sky-400 flex items-center">
+                    <i class="fas fa-shield-alt mr-2"></i> SecureScan
+                </a>
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-white focus:outline-none">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+                <nav class="hidden md:flex space-x-6 items-center" id="desktop-nav">
+                    <a href="index.html" class="nav-link hover:text-sky-400 transition duration-300 px-3 py-2 rounded-md text-sm font-medium">Home</a>
+                    <a href="scanner.html" class="nav-link hover:text-sky-400 transition duration-300 px-3 py-2 rounded-md text-sm font-medium">Scanner</a>
+                    <a href="articles.html" class="nav-link hover:text-sky-400 transition duration-300 px-3 py-2 rounded-md text-sm font-medium">Articles</a>
+                    <a href="tools.html" class="nav-link hover:text-sky-400 transition duration-300 px-3 py-2 rounded-md text-sm font-medium">Tools</a>
+                    <a href="about.html" class="nav-link hover:text-sky-400 transition duration-300 px-3 py-2 rounded-md text-sm font-medium">About</a>
+                    <a href="contact.html" class="nav-link hover:text-sky-400 transition duration-300 px-3 py-2 rounded-md text-sm font-medium">Contact</a>
+                </nav>
+            </div>
+        </div>
+        <div id="mobile-menu" class="md:hidden hidden bg-slate-800">
+            <nav class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="index.html" class="nav-link hover:bg-slate-700 hover:text-sky-400 block px-3 py-2 rounded-md text-base font-medium">Home</a>
+                <a href="scanner.html" class="nav-link hover:bg-slate-700 hover:text-sky-400 block px-3 py-2 rounded-md text-base font-medium">Scanner</a>
+                <a href="articles.html" class="nav-link hover:bg-slate-700 hover:text-sky-400 block px-3 py-2 rounded-md text-base font-medium">Articles</a>
+                <a href="tools.html" class="nav-link hover:bg-slate-700 hover:text-sky-400 block px-3 py-2 rounded-md text-base font-medium">Tools</a>
+                <a href="about.html" class="nav-link hover:bg-slate-700 hover:text-sky-400 block px-3 py-2 rounded-md text-base font-medium">About</a>
+                <a href="contact.html" class="nav-link hover:bg-slate-700 hover:text-sky-400 block px-3 py-2 rounded-md text-base font-medium">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="flex-grow container mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16">
+        <div class="bg-white p-8 md:p-12 rounded-xl shadow-2xl">
+            <h1 class="text-3xl sm:text-4xl font-bold text-slate-800 mb-10 text-center border-b-2 border-sky-500 pb-4">Our Security Toolkit</h1>
+            <p class="text-slate-600 mb-12 text-center text-lg max-w-2xl mx-auto">
+                We're developing a suite of tools to help you enhance your online security. Stay tuned for updates!
+            </p>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-slate-100 p-6 rounded-lg shadow-lg text-center">
+                    <div class="text-sky-500 text-5xl mb-4"><i class="fas fa-key"></i></div>
+                    <h3 class="text-xl font-semibold text-slate-800 mb-2">Password Strength Checker</h3>
+                    <p class="text-slate-600 text-sm mb-4">Analyze the strength of your passwords and get tips for creating more secure ones.</p>
+                    <span class="bg-amber-400 text-amber-800 text-xs font-semibold px-3 py-1 rounded-full">Coming Soon</span>
+                </div>
+
+                <div class="bg-slate-100 p-6 rounded-lg shadow-lg text-center">
+                    <div class="text-sky-500 text-5xl mb-4"><i class="fas fa-lock"></i></div>
+                    <h3 class="text-xl font-semibold text-slate-800 mb-2">Simple Encryption Tool</h3>
+                    <p class="text-slate-600 text-sm mb-4">Encrypt and decrypt short messages or text snippets for basic privacy needs.</p>
+                    <span class="bg-amber-400 text-amber-800 text-xs font-semibold px-3 py-1 rounded-full">Coming Soon</span>
+                </div>
+                
+                <div class="bg-slate-100 p-6 rounded-lg shadow-lg text-center">
+                    <div class="text-sky-500 text-5xl mb-4"><i class="fas fa-network-wired"></i></div>
+                    <h3 class="text-xl font-semibold text-slate-800 mb-2">IP Address Info</h3>
+                    <p class="text-slate-600 text-sm mb-4">Get basic information about an IP address, such as its geolocation (approximate).</p>
+                    <span class="bg-amber-400 text-amber-800 text-xs font-semibold px-3 py-1 rounded-full">Coming Soon</span>
+                </div>
+
+                <div class="bg-slate-100 p-6 rounded-lg shadow-lg text-center">
+                    <div class="text-sky-500 text-5xl mb-4"><i class="fas fa-hashtag"></i></div>
+                    <h3 class="text-xl font-semibold text-slate-800 mb-2">Hash Generator</h3>
+                    <p class="text-slate-600 text-sm mb-4">Generate common hash values (MD5, SHA-256) for text strings for integrity checks.</p>
+                    <span class="bg-amber-400 text-amber-800 text-xs font-semibold px-3 py-1 rounded-full">Coming Soon</span>
+                </div>
+                 <div class="bg-slate-100 p-6 rounded-lg shadow-lg text-center">
+                    <div class="text-sky-500 text-5xl mb-4"><i class="fas fa-file-contract"></i></div>
+                    <h3 class="text-xl font-semibold text-slate-800 mb-2">Basic Privacy Policy Helper</h3>
+                    <p class="text-slate-600 text-sm mb-4">A simple tool to help generate template text for basic website privacy policies.</p>
+                    <span class="bg-amber-400 text-amber-800 text-xs font-semibold px-3 py-1 rounded-full">Coming Soon</span>
+                </div>
+                 <div class="bg-slate-100 p-6 rounded-lg shadow-lg text-center">
+                    <div class="text-sky-500 text-5xl mb-4"><i class="fas fa-question-circle"></i></div>
+                    <h3 class="text-xl font-semibold text-slate-800 mb-2">Cybersecurity Quiz</h3>
+                    <p class="text-slate-600 text-sm mb-4">Test your knowledge on common cybersecurity topics and learn along the way.</p>
+                    <span class="bg-amber-400 text-amber-800 text-xs font-semibold px-3 py-1 rounded-full">Coming Soon</span>
+                </div>
+            </div>
+            <div class="mt-12 text-center">
+                <p class="text-slate-600">We are committed to expanding our toolkit. If you have suggestions, <a href="contact.html" class="text-sky-500 hover:underline">let us know</a>!</p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-slate-900 text-slate-400 py-12 mt-auto">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p>&copy; <span id="currentYear"></span> SecureScan. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

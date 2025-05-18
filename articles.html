@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cybersecurity Articles - SecureScan</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="https://placehold.co/32x32/0f172a/ffffff?text=SS" type="image/png">
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans flex flex-col min-h-screen">
+
+    <header class="bg-slate-900 text-white sticky top-0 z-50 shadow-lg">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <a href="index.html" class="text-3xl font-bold text-sky-400 flex items-center">
+                    <i class="fas fa-shield-alt mr-2"></i> SecureScan
+                </a>
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-white focus:outline-none">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+                <nav class="hidden md:flex space-x-6 items-center" id="desktop-nav">
+                    <a href="index.html" class="nav-link hover:text-sky-400 transition duration-300 px-3 py-2 rounded-md text-sm font-medium">Home</a>
+                    <a href="scanner.html" class="nav-link hover:text-sky-400 transition duration-300 px-3 py-2 rounded-md text-sm font-medium">Scanner</a>
+                    <a href="articles.html" class="nav-link hover:text-sky-400 transition duration-300 px-3 py-2 rounded-md text-sm font-medium">Articles</a>
+                    <a href="tools.html" class="nav-link hover:text-sky-400 transition duration-300 px-3 py-2 rounded-md text-sm font-medium">Tools</a>
+                    <a href="about.html" class="nav-link hover:text-sky-400 transition duration-300 px-3 py-2 rounded-md text-sm font-medium">About</a>
+                    <a href="contact.html" class="nav-link hover:text-sky-400 transition duration-300 px-3 py-2 rounded-md text-sm font-medium">Contact</a>
+                </nav>
+            </div>
+        </div>
+        <div id="mobile-menu" class="md:hidden hidden bg-slate-800">
+            <nav class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="index.html" class="nav-link hover:bg-slate-700 hover:text-sky-400 block px-3 py-2 rounded-md text-base font-medium">Home</a>
+                <a href="scanner.html" class="nav-link hover:bg-slate-700 hover:text-sky-400 block px-3 py-2 rounded-md text-base font-medium">Scanner</a>
+                <a href="articles.html" class="nav-link hover:bg-slate-700 hover:text-sky-400 block px-3 py-2 rounded-md text-base font-medium">Articles</a>
+                <a href="tools.html" class="nav-link hover:bg-slate-700 hover:text-sky-400 block px-3 py-2 rounded-md text-base font-medium">Tools</a>
+                <a href="about.html" class="nav-link hover:bg-slate-700 hover:text-sky-400 block px-3 py-2 rounded-md text-base font-medium">About</a>
+                <a href="contact.html" class="nav-link hover:bg-slate-700 hover:text-sky-400 block px-3 py-2 rounded-md text-base font-medium">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="flex-grow container mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16">
+        <div class="bg-white p-8 md:p-12 rounded-xl shadow-2xl">
+            <h1 class="text-3xl sm:text-4xl font-bold text-slate-800 mb-10 text-center border-b-2 border-sky-500 pb-4">Cybersecurity Articles & Insights</h1>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-slate-100 rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                    <img src="https://placehold.co/600x400/3b82f6/ffffff?text=Phishing" alt="Phishing Awareness" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h2 class="text-xl font-semibold text-slate-800 mb-2">Understanding Phishing Attacks</h2>
+                        <p class="text-slate-600 text-sm mb-4">Learn to identify and avoid phishing scams that try to steal your personal information. We cover common tactics and red flags.</p>
+                        <a href="#" class="text-sky-500 hover:text-sky-600 font-semibold">Read More <i class="fas fa-arrow-right ml-1"></i></a>
+                    </div>
+                </div>
+
+                <div class="bg-slate-100 rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                    <img src="https://placehold.co/600x400/10b981/ffffff?text=Passwords" alt="Strong Passwords" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h2 class="text-xl font-semibold text-slate-800 mb-2">Creating Strong & Secure Passwords</h2>
+                        <p class="text-slate-600 text-sm mb-4">Discover the importance of strong, unique passwords and how password managers can help you stay secure online.</p>
+                        <a href="#" class="text-sky-500 hover:text-sky-600 font-semibold">Read More <i class="fas fa-arrow-right ml-1"></i></a>
+                    </div>
+                </div>
+
+                <div class="bg-slate-100 rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                    <img src="https://placehold.co/600x400/ef4444/ffffff?text=Malware" alt="Malware Protection" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h2 class="text-xl font-semibold text-slate-800 mb-2">Protecting Yourself from Malware</h2>
+                        <p class="text-slate-600 text-sm mb-4">An overview of different types of malware (viruses, ransomware, spyware) and essential tips to prevent infections.</p>
+                        <a href="#" class="text-sky-500 hover:text-sky-600 font-semibold">Read More <i class="fas fa-arrow-right ml-1"></i></a>
+                    </div>
+                </div>
+                
+                <div class="bg-slate-100 rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                    <img src="https://placehold.co/600x400/f59e0b/ffffff?text=2FA" alt="Two-Factor Authentication" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h2 class="text-xl font-semibold text-slate-800 mb-2">The Power of Two-Factor Authentication (2FA)</h2>
+                        <p class="text-slate-600 text-sm mb-4">Understand why 2FA is a critical layer of security and how to enable it on your important online accounts.</p>
+                        <a href="#" class="text-sky-500 hover:text-sky-600 font-semibold">Read More <i class="fas fa-arrow-right ml-1"></i></a>
+                    </div>
+                </div>
+                 <div class="bg-slate-100 rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                    <img src="https://placehold.co/600x400/8b5cf6/ffffff?text=Updates" alt="Software Updates" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h2 class="text-xl font-semibold text-slate-800 mb-2">Why Software Updates Are Crucial</h2>
+                        <p class="text-slate-600 text-sm mb-4">Learn how keeping your operating system, browser, and applications updated helps protect you from vulnerabilities.</p>
+                        <a href="#" class="text-sky-500 hover:text-sky-600 font-semibold">Read More <i class="fas fa-arrow-right ml-1"></i></a>
+                    </div>
+                </div>
+                 <div class="bg-slate-100 rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                    <img src="https://placehold.co/600x400/ec4899/ffffff?text=Public+Wi-Fi" alt="Public Wi-Fi Safety" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h2 class="text-xl font-semibold text-slate-800 mb-2">Staying Safe on Public Wi-Fi Networks</h2>
+                        <p class="text-slate-600 text-sm mb-4">Tips for protecting your data when using public Wi-Fi hotspots in cafes, airports, and other locations.</p>
+                        <a href="#" class="text-sky-500 hover:text-sky-600 font-semibold">Read More <i class="fas fa-arrow-right ml-1"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-12 text-center">
+                <a href="#" class="bg-sky-500 hover:bg-sky-600 text-white font-semibold py-3 px-8 rounded-lg text-lg transition duration-300 shadow-md hover:shadow-lg">
+                    Load More Articles
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-slate-900 text-slate-400 py-12 mt-auto">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p>&copy; <span id="currentYear"></span> SecureScan. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
