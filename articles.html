@@ -17,6 +17,25 @@
                 <a href="index.html" class="text-3xl font-bold text-sky-400 flex items-center">
                     <i class="fas fa-shield-alt mr-2"></i> SecureScan
                 </a>
+                <div id="chatbot" class="fixed bottom-6 right-6 w-80 max-w-full bg-white border border-slate-300 rounded-xl shadow-lg z-50 hidden flex-col overflow-hidden">
+  <div class="bg-slate-900 text-white px-4 py-2 flex justify-between items-center">
+    <span class="font-semibold text-sm">SecureBot</span>
+    <button onclick="document.getElementById('chatbot').classList.add('hidden')" class="text-white text-sm hover:text-red-400">
+      <i class="fas fa-times"></i>
+    </button>
+  </div>
+  <div id="chatLog" class="p-4 text-sm h-64 overflow-y-auto text-slate-800 space-y-2 bg-slate-50">
+    <p><strong>SecureBot:</strong> Hi there! Ask me anything about online safety 👋</p>
+  </div>
+  <div class="p-2 border-t flex items-center bg-white">
+    <input id="chatInput" type="text" placeholder="Type a message..." class="flex-1 border border-slate-300 px-3 py-1 text-sm rounded-md mr-2 focus:outline-none focus:ring-1 focus:ring-sky-500">
+    <button onclick="sendChat()" class="bg-sky-500 hover:bg-sky-600 text-white px-4 py-1 text-sm rounded-md">Send</button>
+  </div>
+</div>
+<!-- Chatbot Launcher -->
+<button onclick="document.getElementById('chatbot').classList.remove('hidden')" class="fixed bottom-6 right-6 bg-sky-500 hover:bg-sky-600 text-white px-4 py-2 rounded-full shadow-lg z-40">
+  <i class="fas fa-comment-alt"></i>
+</button>
                 <div class="md:hidden">
                     <button id="mobile-menu-button" class="text-white focus:outline-none">
                         <i class="fas fa-bars text-2xl"></i>
