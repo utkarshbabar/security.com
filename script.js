@@ -145,3 +145,39 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
 });
+
+function sendChat() {
+  const input = document.getElementById('chatInput');
+  const message = input.value.trim();
+  const log = document.getElementById('chatLog');
+
+  if (message !== '') {
+    // Display user's message
+    const userMsg = document.createElement('p');
+    userMsg.innerHTML = `<strong>You:</strong> ${message}`;
+    log.appendChild(userMsg);
+
+    // Auto-scroll
+    log.scrollTop = log.scrollHeight;
+
+    // Simulate bot reply
+    const reply = document.createElement('p');
+    reply.innerHTML = `<strong>SecureBot:</strong> ${getBotReply(message)}`;
+    setTimeout(() => {
+      log.appendChild(reply);
+      log.scrollTop = log.scrollHeight;
+    }, 800);
+
+    input.value = '';
+  }
+}
+
+function getBotReply(input) {
+  input = input.toLowerCase();
+  if (input.includes("phishing")) return "Phishing is a scam to steal data. Don't click unknown links.";
+  if (input.includes("password")) return "Use a strong password with letters, numbers & symbols.";
+  if (input.includes("vpn")) return "A VPN helps secure your internet connection, especially on public Wi-Fi.";
+  if (input.includes("scan")) return "Use our Scanner page to check suspicious URLs.";
+  return "I'm here to help! Try asking about 'phishing', 'passwords', or 'VPNs'.";
+}
+
