@@ -178,6 +178,36 @@ function getBotReply(input) {
   if (input.includes("password")) return "Use a strong password with letters, numbers & symbols.";
   if (input.includes("vpn")) return "A VPN helps secure your internet connection, especially on public Wi-Fi.";
   if (input.includes("scan")) return "Use our Scanner page to check suspicious URLs.";
+  if (input.includes("hi")) return "hello User, how can I assist you today?";
+  if (input.includes("help")) return "Sure! What do you need help with?";
+  if (input.includes("thanks")) return "You're welcome! If you have more questions, just ask.";
+  if (input.includes("bye")) return "Goodbye! Stay safe online!";
+  if (input.includes("secure")) return "Security is our priority! Always be cautious online.";
+  if (input.includes("malware")) return "Malware is malicious software. Always keep your antivirus updated.";
+  if (input.includes("ransomware")) return "Ransomware locks your files. Always back up your data.";
+  if (input.includes("spyware")) return "Spyware secretly monitors your activities. Use trusted software.";
+  if (input.includes("adware")) return "Adware shows unwanted ads. Use ad blockers for a cleaner experience.";
+    if (input.includes("firewall")) return "A firewall protects your network. Always keep it enabled.";
+    if (input.includes("antivirus")) return "Antivirus software helps detect and remove malware.";
+    if (input.includes("update")) return "Always keep your software updated for the latest security patches.";
+    if (input.includes("social engineering")) return "Social engineering tricks you into revealing personal info. Be cautious.";
+    if (input.includes("data breach")) return "A data breach exposes personal information. Always monitor your accounts.";
+    if (input.includes("identity theft")) return "Identity theft is when someone steals your personal info. Always protect your data.";
+    if (input.includes("two-factor authentication")) return "2FA adds an extra layer of security. Always enable it when available.";
+    if (input.includes("phishing email")) return "Phishing emails often look legitimate. Always verify the sender.";
+    if (input.includes("secure password")) return "A secure password is long, unique, and combines letters, numbers, and symbols.";
+    if (input.includes("encrypted")) return "Encryption secures your data. Always use encrypted connections.";
+    if (input.includes("malicious link")) return "Malicious links can lead to phishing sites. Always verify before clicking.";
+    if (input.includes("scam")) return "Scams can take many forms. Always be cautious and verify before acting.";
+    if (input.includes("cybersecurity")) return "Cybersecurity protects systems from cyber threats. Always stay informed.";
+    if (input.includes("secure browsing")) return "Secure browsing means using HTTPS and avoiding suspicious sites.";
+    if (input.includes("online safety")) return "Online safety means being cautious and protecting your personal information.";
+    if (input.includes("secure connection")) return "A secure connection uses encryption to protect your data. Always look for HTTPS.";
+    if (input.includes("malware scan")) return "A malware scan checks your system for malicious software. Always run regular scans.";
+    if (input.includes("data privacy")) return "Data privacy means protecting your personal information. Always be cautious about what you share.";
+    if (input.includes("vpn benefits")) return "VPNs provide privacy, security, and access to restricted content.";
+    if (input.includes("secure website")) return "A secure website uses HTTPS. Always check for the padlock icon in the address bar.";
+    if (input.includes("secure your data")) return "To secure your data, use strong passwords, encryption, and regular backups.";
   return "I'm here to help! Try asking about 'phishing', 'passwords', or 'VPNs'.";
 }
 
